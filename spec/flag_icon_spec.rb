@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 RSpec.describe FlagIcon do
-  subject { described_class }
+  subject { FlagIcon }
 
   it "has a version number" do
-    expect(FlagIcon::VERSION).not_to be_nil
+    expect(FlagIcon::Rails::VERSION).not_to be_nil
   end
 
   describe '#language_name' do

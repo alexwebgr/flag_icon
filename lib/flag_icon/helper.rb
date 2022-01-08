@@ -1,10 +1,12 @@
-require "flag_icon/countries"
-
 module FlagIcon
   private
 
   def language_name(code)
     FlagIcon::Countries::LANGUAGES[code.to_sym]
+  end
+
+  def country_name(code)
+    FlagIcon::Countries::NAMES[code.to_sym]
   end
 
   def language_flag(code)
@@ -18,8 +20,12 @@ module FlagIcon
     }
   end
 
-  def flag_icon(code)
+  def language_icon(code)
     "<span class='flag-icon flag-icon-#{language_flag(code)}' title='Audio language - #{language_name(code)}'></span>"
+  end
+
+  def flag_icon(code)
+    "<span class='flag-icon flag-icon-#{code}' title='Available in #{country_name(code)}'></span>"
   end
 
   public
