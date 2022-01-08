@@ -1,5 +1,4 @@
 require "flag_icon/countries"
-require "flag_icon/version"
 
 module FlagIcon
   def language_name(code)

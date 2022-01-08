@@ -1,10 +1,10 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "flag_icon/version"
+require "flag_icon/rails/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "flag_icon"
-  spec.version       = FlagIcon::VERSION
+  spec.version       = FlagIcon::Rails::VERSION
   spec.authors       = ['alexwebgr']
   spec.email         = ['email@alex-web.gr']
 
