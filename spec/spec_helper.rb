@@ -6,8 +6,6 @@ require 'simplecov'
 RSpec.configure do |config|
   SimpleCov.start do
     add_filter "/spec/"
-    add_filter "/db/"
-    add_filter "/config/"
     add_filter "/bin/"
     enable_coverage :branch
   end

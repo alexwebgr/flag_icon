@@ -1,9 +1,9 @@
 require 'rails'
-require "flag_icon/helper"
+require "flag_icon/helpers"
 
 module FlagIcon
   class Railtie < ::Rails::Railtie
-    initializer "flag_icon.helper" do
+    initializer "flag_icon.helpers" do
       ActionView::Base.send :include, FlagIcon
     end
   end
