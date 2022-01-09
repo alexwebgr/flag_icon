@@ -11,7 +11,7 @@ module FlagIcon
   # It returns the country name
   #
   # @param code -> country iso code
-  # @example language_name('gr') # => Greece
+  # @example country_name('gr') # => Greece
   # @return String
   def country_name(code)
     FlagIcon::Countries::NAMES[code.to_sym]
@@ -20,42 +20,49 @@ module FlagIcon
   # It returns the country iso code
   #
   # @param code -> language locale
-  # @example language_name('el') # => gr
+  # @example language_flag('el') # => gr
   # @return String
   def language_flag(code)
     FlagIcon::Countries::LANGUAGE_FLAGS[code.to_sym] || 'xx'
   end
 
-  # It returns the country iso code
+  # It returns an array that can be used in the select tag
+  #
+  # @example select_language
+  # @return Array
+  def select_language
+    available_languages.map { |lang| [language_name(lang), lang] }
+  end
+
+  # It returns an hash of arrays that can be used in the select tag
   #
   # @param popular -> title of the popular group
   # @param available -> title of the available group
-  # @example select_language
+  # @example grouped_select_language(popular: 'Popular', available: 'Available')
   # @return Hash
-  def select_language(popular = 'Popular', available = 'Available')
+  def grouped_select_language(popular: 'Popular', available: 'Available')
     {
       popular => popular_languages,
       available => available_languages.map { |lang| [language_name(lang), lang] }
     }
   end
 
-
   # It returns HTML element with country icon and title
   #
   # @param code -> language locale
   # @example language_icon('el')
   # @return String
-  def language_icon(code)
-    "<span class='flag-icon flag-icon-#{language_flag(code)}' title='Audio language - #{language_name(code)}'></span>"
+  def language_icon(code, title: "Audio language - #{language_name(code)}")
+    "<span class='flag-icon flag-icon-#{language_flag(code)}' title='#{title}'></span>"
   end
 
-  # It returns HTML element with country icon
+  # It returns HTML element with country icon and title
   #
   # @param code -> country iso code
-  # @example county_icon('gr')
+  # @example country_icon('gr')
   # @return String
-  def county_icon(code)
-    "<span class='flag-icon flag-icon-#{code}' title='Available in #{country_name(code)}'></span>"
+  def country_icon(code, title: "Available in #{country_name(code)}")
+    "<span class='flag-icon flag-icon-#{code}' title='#{title}'></span>"
   end
 
   # Define in your application_helper to override the popular languages
@@ -86,8 +93,9 @@ module FlagIcon
   module_function :country_name
   module_function :language_flag
   module_function :select_language
+  module_function :grouped_select_language
   module_function :language_icon
-  module_function :county_icon
+  module_function :country_icon
   module_function :popular_languages
   module_function :available_languages
 end

@@ -2,16 +2,15 @@
 [![Gem Version](https://badge.fury.io/rb/flag_icon.svg)](https://badge.fury.io/rb/flag_icon)
 
 ### Purpose
-An attempt to map languages to flags!
+An attempt to map languages to country flags!
 
 ### Approach
 Matching flags to languages can be really tricky and even problematic sometimes because there is no direct association
-between languages and countries since the same language is spoken in many countries and many languages are spoken in a single.
-So a effort was made to identify the official language of each country and then assign the flag to the language not the country.
+between languages and countries since the same language is spoken in many countries and many languages are spoken in a single country.
 
 So for a title from Mexico which has spanish as the official language the spanish flag will appear.
 
-Therefore if you notice any flags being mismatched please raise an [issue](https://github.com/alexwebgr/flag_icon/issues)
+If you notice any flags being mismatched please raise an [issue](https://github.com/alexwebgr/flag_icon/issues)
 or even better open a [pull request](https://github.com/alexwebgr/flag_icon/pulls)
 
 
@@ -43,12 +42,12 @@ There is a number of helpers available that will render country names, language 
 language_icon
 ```
 ```ruby
-# It returns HTML element with country icon
+# It returns HTML element with country icon and title
 #
 # @param code -> country iso code
-# @example county_icon('gr')
+# @example country_icon('gr')
 # @return String
-county_icon
+country_icon
 ```
 ```ruby
 # It returns the language name
@@ -62,7 +61,7 @@ language_name
 # It returns the country name
 #
 # @param code -> country iso code
-# @example language_name('gr') # => Greece
+# @example country_name('gr') # => Greece
 # @return String
 country_name
 ```
@@ -70,18 +69,25 @@ country_name
 # It returns the country iso code
 #
 # @param code -> language locale
-# @example language_name('el') # => gr
+# @example language_flag('el') # => gr
 # @return String
 language_flag
 ```
 ```ruby
-# It returns the country iso code
+# It returns an array that can be used in the select tag
+#
+# @example select_language
+# @return Array
+select_language
+```
+```ruby
+  # It returns an hash of arrays that can be used in the select tag
 #
 # @param popular -> title of the popular group
 # @param available -> title of the available group
-# @example select_language
+# @example grouped_select_language(popular: 'Popular', available: 'Available')
 # @return Hash
-select_language
+grouped_select_language
 ```
 ```ruby
 # Define in your application_helper to override the popular languages
