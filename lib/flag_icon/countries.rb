@@ -444,6 +444,7 @@ module FlagIcon::Countries
     "li": "Limburgish ( Limburger)",
     "ln": "Lingala",
     "lt": "Lithuanian",
+    "lb": "Luxembourgish",
     "mk": "Macedonian",
     "mg": "Malagasy",
     "ms": "Malay",
