@@ -6,3 +6,7 @@ ruby '3.0.3'
 
 # Specify your gem's dependencies in flag_icon.gemspec
 gemspec
+
+gem 'sinatra'
+gem 'sinatra-reloader'
+gem 'thin'

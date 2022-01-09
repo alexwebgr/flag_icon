@@ -1,0 +1,24 @@
+<h4>FlagIcon::Countries::LANGUAGE_FLAGS</h4>
+<table class="table table-striped table-hover">
+  <thead>
+  <tr>
+    <th>language_icon</th>
+    <th>language_name</th>
+    <th>country_name</th>
+    <th>country_icon</th>
+  </tr>
+  </thead>
+  <% FlagIcon::Countries::LANGUAGE_FLAGS.sort.each do |item| %>
+    <% lang, country = item %>
+    <tr>
+      <td><%= FlagIcon.language_icon(lang) %></td>
+      <td><%= lang %> - <%= FlagIcon.language_name lang %></td>
+      <td><%= country %> - <%= FlagIcon.country_name(country) %></td>
+      <td><%= FlagIcon.country_icon(country) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= FlagIcon.select_language %>
+<br />
+<%= FlagIcon.grouped_select_language %>
