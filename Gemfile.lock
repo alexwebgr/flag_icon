@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    flag_icon (1.5.1)
+    flag_icon (1.5.2)
 
 GEM
   remote: https://rubygems.org/

@@ -363,6 +363,7 @@ module FlagIcon::Countries
     wo: "sn",
     ak: "gh",
     ab: "ab",
+    xx: "xx",
   }
 
   # language code to language name
@@ -372,6 +373,7 @@ module FlagIcon::Countries
     "ab": "Abkhazian",
     "aa": "Afar",
     "af": "Afrikaans",
+    "al": "Albanian",
     "sq": "Albanian",
     "am": "Amharic",
     "ar": "Arabic",
@@ -419,7 +421,9 @@ module FlagIcon::Countries
     "gu": "Gujarati",
     "ha": "Hausa",
     "he": "Hebrew",
+    "in": "Hindi",
     "hi": "Hindi",
+    "ht": "Haitian",
     "hu": "Hungarian",
     "is": "Icelandic",
     "id": "Indonesian",
@@ -429,7 +433,8 @@ module FlagIcon::Countries
     "ik": "Inupiak",
     "ga": "Irish",
     "it": "Italian",
-    "ja": "Javanese",
+    "ja": "Japanese",
+    "jp": "Japanese",
     "kn": "Kannada",
     "ks": "Kashmiri",
     "kk": "Kazakh",
@@ -437,6 +442,7 @@ module FlagIcon::Countries
     "ky": "Kirghiz",
     "rn": "Kirundi (Rundi)",
     "ko": "Korean",
+    "kr": "Korean",
     "ku": "Kurdish",
     "lo": "Laothian",
     "la": "Latin",
@@ -454,6 +460,9 @@ module FlagIcon::Countries
     "mr": "Marathi",
     "mo": "Moldavian",
     "mn": "Mongolian",
+    "mh": "Marshallese",
+    "dv": "Divehi",
+    "ny": "Chichewa",
     "na": "Nauru",
     "ne": "Nepali",
     "no": "Norwegian",
@@ -483,10 +492,12 @@ module FlagIcon::Countries
     "sk": "Slovak",
     "sl": "Slovenian",
     "so": "Somali",
+    "lg": "Ganda",
     "es": "Spanish",
     "su": "Sundanese",
     "sw": "Swahili (Kiswahili)",
     "sv": "Swedish",
+    "se": "Swedish",
     "tl": "Tagalog",
     "tg": "Tajik",
     "ta": "Tamil",
@@ -500,6 +511,7 @@ module FlagIcon::Countries
     "tr": "Turkish",
     "tk": "Turkmen",
     "tw": "Twi",
+    "tvl": "Tuvalu",
     "ug": "Uighur",
     "uk": "Ukrainian",
     "ur": "Urdu",
@@ -511,6 +523,7 @@ module FlagIcon::Countries
     "xh": "Xhosa",
     "yi": "Yiddish",
     "yo": "Yoruba",
-    "zu": "Zulu"
+    "zu": "Zulu",
+    "xx": "Unknown"
   }
 end
