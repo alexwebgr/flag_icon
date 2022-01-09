@@ -23,7 +23,7 @@ module FlagIcon
   # @example language_name('el') # => gr
   # @return String
   def language_flag(code)
-    FlagIcon::Countries::LANGUAGE_FLAGS[code.to_sym]
+    FlagIcon::Countries::LANGUAGE_FLAGS[code.to_sym] || 'xx'
   end
 
   # It returns the country iso code
