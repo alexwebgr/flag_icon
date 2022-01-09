@@ -1,5 +1,18 @@
 # FlagIcon
+[![Gem Version](https://badge.fury.io/rb/flag_icon.svg)](https://badge.fury.io/rb/flag_icon)
+
+### Purpose
 An attempt to map languages to flags!
+
+### Approach
+Matching flags to languages can be really tricky and even problematic sometimes because there is no direct association
+between languages and countries since the same language is spoken in many countries and many languages are spoken in a single.
+So a effort was made to identify the official language of each country and then assign the flag to the language not the country.
+
+So for a title from Mexico which has spanish as the official language the spanish flag will appear.
+
+Therefore if you notice any flags being mismatched please raise an [issue](https://github.com/alexwebgr/flag_icon/issues)
+or even better open a [pull request](https://github.com/alexwebgr/flag_icon/pulls)
 
 
 ## Installation
@@ -97,15 +110,6 @@ available_languages
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 ## Contributing
-Matching flags to languages can be really tricky and even problematic sometimes because there is no direct association 
-between languages and countries since the same language is spoken in many countries and many languages are spoken in a single. 
-So a effort was made to identify the official language of each country and then assign the flag to the language not the country.
-
-So for a title from Mexico which has spanish as the official language the spanish flag will appear.
-
-Therefore if you notice any flags being mismatched please raise an [issue](https://github.com/alexwebgr/flag_icon/issues) 
-or even better open a [pull request](https://github.com/alexwebgr/flag_icon/pulls)
-
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/alexwebgr/flag_icon/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
