@@ -2,6 +2,7 @@ module FlagIcon::Countries
   # ISO country codes to county name
   NAMES = {
     ab: "Abkhazia",
+    ak: "Alaska",
     ad: "Andorra",
     ae: "United Arab Emirates",
     af: "Afghanistan",
@@ -257,6 +258,7 @@ module FlagIcon::Countries
   LANGUAGE_FLAGS = {
     ca: "es-ct",
     gl: "es-ga",
+    eu: "es-eu",
     ar: "ae",
     fa: "af",
     en: "gb",
@@ -298,6 +300,7 @@ module FlagIcon::Countries
     is: "is",
     it: "it",
     ja: "jp",
+    jp: "jp",
     ky: "kg",
     km: "kh",
     ko: "ko",
@@ -350,7 +353,6 @@ module FlagIcon::Countries
     zu: "za",
     bg: "bg",
     cy: "gb-wls",
-    eu: "es-eu",
     he: "il",
     yi: "il",
     ig: "ng",
@@ -360,6 +362,7 @@ module FlagIcon::Countries
     sl: "si",
     wo: "sn",
     ak: "gh",
+    ab: "ab",
   }
 
   # language code to language name

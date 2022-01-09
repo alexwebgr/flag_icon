@@ -4,8 +4,9 @@
   }
 } @else {
   @include flag-icon(ad);
+  @include flag-icon(ak);
   @include flag-icon(ae);
-  @include flag-icon(ab); // from ae
+  @include flag-icon(ab);
   @include flag-icon(af);
   @include flag-icon(ag);
   @include flag-icon(ai);
@@ -112,7 +113,6 @@
   @include flag-icon(il);
   @include flag-icon(im);
   @include flag-icon(in);
-  @include flag-icon(hi); // from in
   @include flag-icon(io);
   @include flag-icon(iq);
   @include flag-icon(ir);
@@ -122,7 +122,6 @@
   @include flag-icon(jm);
   @include flag-icon(jo);
   @include flag-icon(jp);
-  @include flag-icon(ja); // from jp
   @include flag-icon(ke);
   @include flag-icon(kg);
   @include flag-icon(kh);
@@ -269,6 +268,7 @@
   @include flag-icon(ea);
   @include flag-icon(es-ct);
   @include flag-icon(es-ga);
+  @include flag-icon(es-eu);
   @include flag-icon(eu);
   @include flag-icon(gb-eng);
   @include flag-icon(gb-nir);
