@@ -46,9 +46,9 @@ language_icon
 # It returns HTML element with country icon
 #
 # @param code -> country iso code
-# @example flag_icon('gr')
+# @example county_icon('gr')
 # @return String
-flag_icon
+county_icon
 ```
 ```ruby
 # It returns the language name

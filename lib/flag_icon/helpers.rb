@@ -52,9 +52,9 @@ module FlagIcon
   # It returns HTML element with country icon
   #
   # @param code -> country iso code
-  # @example flag_icon('gr')
+  # @example county_icon('gr')
   # @return String
-  def flag_icon(code)
+  def county_icon(code)
     "<span class='flag-icon flag-icon-#{code}' title='Available in #{country_name(code)}'></span>"
   end
 
@@ -87,7 +87,7 @@ module FlagIcon
   module_function :language_flag
   module_function :select_language
   module_function :language_icon
-  module_function :flag_icon
+  module_function :county_icon
   module_function :popular_languages
   module_function :available_languages
 end
